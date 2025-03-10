@@ -18,7 +18,7 @@ body {
 
 :root {
   --grey-black: #333333;
-  --gold: #aa9a49;
+  --gold: #aebc9b;
   --gray: #efefef;
   --white-color: #fcfaf9;
   --gray-second: #757575;
@@ -118,3 +118,58 @@ header a:hover {
 }
 
 /*endHeader*/
+.search-input {
+  margin: 15px auto;
+  width: 40%;
+padding: 15px;
+cursor: pointer;
+display: flex;
+justify-content: center;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  cursor: pointer;
+}
+
+.search-input input {
+  min-width: 200px;
+  width: 80%;
+  padding: 15px;
+  border-radius: 5px;
+  border: 2px solid var(--gold);
+  font-size: 1.3em;
+}
+
+.question-container{
+  width: 80%;
+margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+}
+.question-item {
+  width: 300px;
+  min-width: 280px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 15px;
+background-color: var(--gold);
+box-shadow: 1px 1px 1px #eee ;
+}
+
+.question-item p {
+  padding: 8px 0px;
+}
+
+
+@media all and (max-width: 880px) {
+.search-input {
+  width: 80%;
+}
+}
+
+.hidee{
+  display: none;
+}

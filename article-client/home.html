@@ -3,10 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
   <title>Home Page</title>
 </head>
 <body>
-  <h1>Home</h1>
+  <!-----Start Of Header Section -->
+    <header>
+      <a href="#"
+        ><img
+          src="assets/images/logo1.jpg"
+          alt="logo.jpg"
+      /></a>
+      <nav>
+        <div class="nav-item">
+          <i>
+            <a
+              href="faq.html"
+              >FAQ</a
+            >
+          </i>
+        </div>
+        <div class="nav-item">
+          <i>
+            <a
+              href="index.html"
+              id="logout"
+              >Logout</a
+            >
+          </i>
+        </div>
+      </nav>
+    </header>
+    <!-----End Of Header Section -->
+
+
+    <div class="search-input">
+      <input type="search"
+      id="search-input"
+      placeholder="Search questions..."
+      onkeyup="filterQuestions(event)">
+
+    </div>
+
+<div class="home-page">
+      <div class="question-container" id="question-container"></div>
+</div>
   
+    <script src="js/axios.min.js"></script>
+    <script src="js/axiosInstance.js"></script>
+    <script src="js/home.js"></script>
 </body>
 </html>
