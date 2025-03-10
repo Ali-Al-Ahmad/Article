@@ -157,10 +157,32 @@ margin: 0 auto;
   border-radius: 15px;
 background-color: var(--gold);
 box-shadow: 1px 1px 1px #eee ;
+position: relative;
 }
 
 .question-item p {
   padding: 8px 0px;
+}
+.faq-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10vh;
+}
+.faq-page h1 {
+  margin-bottom: 15px;
+}
+.faq-page form input[type="text"] {
+  padding: 2em;
+  margin-bottom: 5px;
+}
+
+.question-item img {
+  position: absolute;
+  width: 0.8em;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
 }
 
 
