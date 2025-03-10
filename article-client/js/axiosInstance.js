@@ -1,5 +1,5 @@
 const serverURL =
-  'http://localhost:8080/Article/article-server/api/v1'
+  'http://52.47.202.106/server/v1/api'
 
 const api = axios.create({
   baseURL: serverURL,
