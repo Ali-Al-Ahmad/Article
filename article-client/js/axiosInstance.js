@@ -1,5 +1,5 @@
 const serverURL =
-  'http://52.47.202.106/server/v1/api'
+  'http://52.47.202.106/server/api/v1'
 
 const api = axios.create({
   baseURL: serverURL,
