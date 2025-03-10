@@ -6,7 +6,7 @@ async function userRegisterApi(event) {
   event.preventDefault()
 
   try {
-    const response = await api.post('/api/v1/users/signup.php', {
+    const response = await api.post('/users/signup.php', {
       full_name: full_name.value,
       email: email_address.value,
       password: password.value,
