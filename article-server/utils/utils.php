@@ -2,7 +2,7 @@
 //return response with success message
 function responseSuccess($message, $data = null)
 {
-  http_response_code(200);
+  // http_response_code(200);
   $response = [
     "status" => "success",
     "success" => true,
@@ -15,7 +15,7 @@ function responseSuccess($message, $data = null)
 //return response with error message
 function responseError($message)
 {
-  http_response_code(400);
+  // http_response_code(400);
   $response = [
     "status" => "error",
     "success" => false,

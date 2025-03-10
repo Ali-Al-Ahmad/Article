@@ -1,0 +1,175 @@
+/**Adding Font + Reset Css**/
+@font-face {
+  font-family: RobotoFont;
+  src: url(../assets/fonts/static/Roboto-Regular.ttf);
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: RobotoFont, monospace, sans-serif;
+}
+body {
+  background-color: var(--white-color);
+}
+
+:root {
+  --grey-black: #333333;
+  --gold: #aebc9b;
+  --gray: #efefef;
+  --white-color: #fcfaf9;
+  --gray-second: #757575;
+}
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+/**Sing-in Page**/
+.sign-in-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+.sign-in-form {
+  background-color: var(--gold);
+  width: 45vw;
+  min-width: 250px;
+  max-width: 400px;
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  border-radius: 10px;
+}
+.input-field {
+  width: 98%;
+  margin-bottom: 0.5em;
+  position: relative;
+}
+.input-field > img {
+  width: 1.2em;
+  height: 1.2em;
+  position: absolute;
+  z-index: 1;
+  top: 12px;
+  left: 12px;
+}
+.sign-in-form input,
+.popup-form input {
+  width: 100%;
+  min-height: fit-content;
+  padding: 12px 40px;
+  border-radius: 5px;
+  border: none;
+  font-size: 17px;
+  outline: none;
+}
+
+input:focus {
+  outline: 2px solid var(--grey-black);
+  caret-color: var(--gold);
+}
+
+.submit-button input {
+  background-color: var(--grey-black);
+  color: var(--white-color);
+  cursor: pointer;
+}
+input[type='submit']:hover {
+  background-color: #4d4d4d;
+}
+/** Endo of Sing-in Page **/
+/* ------- index.html------------- */
+header {
+  min-height: fit-content;
+  height: 10vh;
+  background-color: var(--grey-black);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 5%;
+}
+header > nav {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 3em;
+}
+header a > img {
+  padding: 1px 0px 5px 0px;
+  width: 3.5em;
+  height: 3.5em;
+  cursor: pointer;
+  transform: scale(1.4);
+}
+
+nav .nav-item {
+  font-size: 1.3em;
+  opacity: 0.95;
+}
+header a:hover {
+  color: var(--gold);
+}
+
+/*endHeader*/
+.search-input {
+  margin: 15px auto;
+  width: 40%;
+padding: 15px;
+cursor: pointer;
+display: flex;
+justify-content: center;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  cursor: pointer;
+}
+
+.search-input input {
+  min-width: 200px;
+  width: 80%;
+  padding: 15px;
+  border-radius: 5px;
+  border: 2px solid var(--gold);
+  font-size: 1.3em;
+}
+
+.question-container{
+  width: 80%;
+margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+}
+.question-item {
+  width: 300px;
+  min-width: 280px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 15px;
+background-color: var(--gold);
+box-shadow: 1px 1px 1px #eee ;
+}
+
+.question-item p {
+  padding: 8px 0px;
+}
+
+
+@media all and (max-width: 880px) {
+.search-input {
+  width: 80%;
+}
+}
+
+.hidee{
+  display: none;
+}

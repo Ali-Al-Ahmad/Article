@@ -15,6 +15,11 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
+if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
+  http_response_code(200);
+  exit();
+}
+
 $data = [];
 // check if request is JSON or formdata before pass body to any api
 if ($_SERVER['REQUEST_METHOD'] === "GET" || $_SERVER['REQUEST_METHOD'] === 'DELETE') {
