@@ -11,7 +11,7 @@ window.onload = async function () {
 
 async function getAllquestions() {
   try {
-    const response = await api.get(`/questions/getAllquestions.php`)
+    const response = await api.get(`/questions/getAllQuestions.php`)
 
     if (response.data.status !== 'success') {
       console.log(response.data.message)
